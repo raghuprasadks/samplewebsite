@@ -1,0 +1,12 @@
+body{
+    background-color: lightblue;
+}
+
+div{   
+   
+        border: 5px solid;
+        margin: auto;
+        width: 20%;
+        padding: 10px;      
+}
+
