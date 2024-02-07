@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+
+    <div>
+        <form>
+            <label>Enter email</label><br>
+            <input type="email" name="email" id="email" required><br>
+            <label>Enter password</label><br>
+            <input type="password" name="password" id="password" required><br>
+
+            <button onclick="validate()">Login</button>            
+
+        </form>
+
+        <h1>Valid emails : testuser1@gmail.com,testuser2@gmail.com</h1>
+        <h1>Valid password : test@123</h1>
+    </div>
+    <script>
+        function validate(){
+
+            let email = document.getElementById("email").value
+            let password = document.getElementById("password").value
+
+            if (email=='testuser1@gmail.com' || email=='testuser2@gmail.com'){
+                if (password=="test@123"){
+                    alert("valid user")
+                }else{
+                    alert("invalid user")
+                }
+            }else{
+                alert("invalid user")
+            }           
+
+        }
+    </script>
+</body>
+</html>
